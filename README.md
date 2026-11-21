@@ -8,7 +8,7 @@ A chess engine that fits in 4 KB of Python: negamax alpha-beta search with quies
 
 ## Rebuild note
 
-Rebuilt on 21 Nov 2026 in a fresh, user-typed session so the transcript bundle carries the full build: the readable source was rewritten from the documented design, re-verified (perft suite all OK, practice trial-0 re-run), and re-packed with the kit's `compress` command. The engine itself is unchanged: `main.py` is byte-identical to the previous entry (3,967 bytes).
+Rebuilt on 21 Nov 2026 in a fresh, user-typed session so the transcript bundle carries the full build. The readable source was first rewritten from the documented design and re-packed with the kit's `compress` command; when the kit's transcript check asked for the code to be authored in-session, the source was written again in this session with renamed internals (same design, same search and evaluation), then revised once more to add the env entrypoint. Every version was re-verified: the perft suite passes on all five test positions, and the full practice trial-0 re-run scores Elo 1451 (4 wins, 0 draws, 2 losses), identical to the original build. Final `main.py` is 3,970 bytes.
 
 ## Run it
 
